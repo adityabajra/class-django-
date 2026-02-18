@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Action</title>
+  </head>
+  <body>
+    <h1>List of users</h1>
+
+    {% for user in users %}
+    <h2>{{ user.name|safe }}</h2>
+    {% endfor %}
+
+    <h2>&lt;script&gt;,</h2>
+  </body>
+</html>
